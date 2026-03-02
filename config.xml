@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.newblockblast.ironsmash" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>New Block Blast - Iron Smash</name>
+    <description>New Block Blast - Iron Smash Game</description>
+    <author email="destek@seninsiten.com" href="http://seninsiten.com">Developer</author>
+
+    <content src="index.html" />
+    
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-3498906520872394~3153954244"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+    </platform>
+
+    <plugin name="cordova-plugin-admob-plus" />
+    <variable name="APP_ID_ANDROID" value="ca-app-pub-3498906520872394~3153954244" />
+</widget>

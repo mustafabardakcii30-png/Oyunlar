@@ -1,0 +1,29 @@
+{
+  "name": "com.newblockblast.ironsmash",
+  "displayName": "NewBlockBlastIronSmash",
+  "version": "1.0.0",
+  "description": "New Block Blast - Iron Smash Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Developer",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^12.0.0",
+    "cordova-plugin-admob-plus": "^1.28.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-admob-plus": {
+        "APP_ID_ANDROID": "ca-app-pub-3498906520872394~3153954244"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}
